@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "923755477122",
+    "firebase_url": "https://monitoring-9f684.firebaseio.com",
+    "project_id": "monitoring-9f684",
+    "storage_bucket": "monitoring-9f684.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923755477122:android:dd7106227bc3978da15c9b",
+        "android_client_info": {
+          "package_name": "com.example.monitoringlansia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923755477122-20l5v6907o4msmmu1up77or7qj6amd4h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.monitoringlansia",
+            "certificate_hash": "ed48e600d79f532ce9487beb683ac14c5d1ea562"
+          }
+        },
+        {
+          "client_id": "923755477122-fmng6bgcedhi7di7gobfrtasaps38odk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD8iXOsDq7pPqWG0MfjruRWZkvHTu5Ivo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923755477122-fmng6bgcedhi7di7gobfrtasaps38odk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
