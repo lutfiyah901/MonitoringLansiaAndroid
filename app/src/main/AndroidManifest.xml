@@ -19,7 +19,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyCircleActivity"></activity>
+        <activity android:name=".SensorGulaActivity"></activity>
+        <activity android:name=".SensorMaxActivity" />
+        <activity android:name=".SensorSuhu1" />
+        <activity android:name=".FireApp" />
+        <activity android:name=".MyCircleActivity" />
         <activity android:name=".JoinCircleActivity" />
         <activity
             android:name=".UserLocationMainActivity"

@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
@@ -73,6 +75,7 @@ implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -127,7 +130,6 @@ implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback
 
 
 
-
     }
 
     @Override
@@ -164,20 +166,35 @@ implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback
             startActivity(myIntent);
 
         }
-        else if (id == R.id.nav_myCircle)
-        {
-
-        }
-        else if (id == R.id.nav_inviteMembers)
-        {
-
-        }
         else if (id == R.id.nav_shareLoc)
         {
             Intent i = new Intent(Intent.ACTION_SEND);
             i.setType("text/plain");
-            i.putExtra(Intent.EXTRA_TEXT,"My location is :"+"https://www.google.com/maps/@"+latLng.latitude+","+latLng.longitude+",17z");
+            i.putExtra(Intent.EXTRA_TEXT,"My location is :"+"https://www.google.com/maps/@"+
+                    latLng.latitude+","+latLng.longitude+",17z");
             startActivity(i.createChooser(i,"Share using: "));
+
+            String uri = "http://maps.google.com/maps?q="+latLng.latitude+","+latLng.longitude;
+            Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT,  uri);
+            startActivity(Intent.createChooser(sharingIntent, "Share in..."));
+
+        }
+        else if (id == R.id.nav_sensor_suhu){
+
+            Intent myIntent = new Intent(UserLocationMainActivity.this,SensorSuhu1.class);
+            startActivity(myIntent);
+
+        }
+        else if (id == R.id.nav_sensor_max){
+            Intent myIntent = new Intent(UserLocationMainActivity.this,SensorMaxActivity.class);
+            startActivity(myIntent);
+
+        }
+        else if (id == R.id.nav_sensor_gula_darah) {
+            Intent myIntent = new Intent(UserLocationMainActivity.this,SensorGulaActivity.class);
+            startActivity(myIntent);
 
         }
         else if (id == R.id.nav_signOut)
