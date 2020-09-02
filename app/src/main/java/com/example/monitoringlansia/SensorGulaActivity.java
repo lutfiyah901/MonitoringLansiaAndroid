@@ -28,7 +28,7 @@ public class SensorGulaActivity extends AppCompatActivity {
         dref2.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                status3 = dataSnapshot.child("GULA_DARAH").getValue().toString();
+                status3 = dataSnapshot.child("mgdl").getValue().toString();
                 GULA_DARAH.setText(status3);
             }
 

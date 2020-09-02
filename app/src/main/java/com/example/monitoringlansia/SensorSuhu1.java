@@ -31,7 +31,7 @@ public class SensorSuhu1 extends AppCompatActivity {
         dref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                status = dataSnapshot.child("SUHU").getValue().toString();
+                status = dataSnapshot.child("Suhu(*C)").getValue().toString();
                 SUHU.setText(status);
             }
 

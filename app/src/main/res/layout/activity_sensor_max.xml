@@ -7,13 +7,34 @@
     tools:context=".SensorMaxActivity">
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Nilai Sensor Detak Jantung"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="Nilai Sensor Saturasi Oksigen"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/nilai_bpm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Detak Jantung"
+        android:hint="Detak Jantung"
         tools:layout_editor_absoluteX="133dp"
         tools:layout_editor_absoluteY="325dp"
-        android:layout_marginTop="106dp"
+        android:layout_marginTop="200dp"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
@@ -25,12 +46,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/nilai_bpm"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="217dp"
-        android:text="TextView"
+        android:layout_marginTop="350dp"
+        android:text="Saturasi Oksigen"
+        android:hint="Saturasi Oksigen"
         android:textSize="24sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="325dp" />
+        tools:layout_editor_absoluteY="325dp"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
